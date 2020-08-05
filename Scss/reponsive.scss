@@ -1,37 +1,97 @@
-
 @import '../Scss/variable+mixin.scss';
+@media only screen and (max-width: 768px) {
+  .img-header {
+    img {
+      @include size-img(300px, 61.74px);
+    }
+  }
 
-@media only screen and (max-width: 768px) {    
-    .img-header {
-        img {
-            width: 300px !important;
-            height: 61.74px !important; 
+  .menu-header {
+    li {
+      padding: 0;
     }
+  }
+
+  .header-banner {
+    height: 350px;
+
+    .header-content {
+      padding: 70px 0 0 0;
+      margin-left: -40px;
+
+      p {
+        font-size: 28px !important;
+      }
+
+      pre {
+        @include font(UTM BryantLG, #505353, 16px);
+        margin: -5px 0 0 -45px;
+      }
+
+      a {
+        @include button ($bg-color, 37.14px, 200px, 35px);
+        font-size: 16px;
+        margin-top: -5px;
+      }
     }
-    .menu-header {
-        li {
-            padding: 0;
-        }
-    }
+  }
+
+  .header-footer {
+    height: 122px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
-        .img-header {
-            img {
-            width: 150px !important;
-            height: 26.75px !important;
-            margin-left: 40%;
-        }
-        }
-        .menu-header {
-                margin-left: 32%;
-                a {
-                    font: normal bold 16px/22px 'Open-sans' !important;
-                    &:hover {
-                        color: $bg-color !important;
-                    }
-
-                }
-            }
+  .img-header {
+    img {
+      @include size-img(150px, 26.75px);
+      margin-left: 65%;
     }
-       
+  }
+
+  .menu-header {
+    margin-left: 32%;
+
+    a {
+      font: normal bold 16px/22px 'Open-sans' !important;
+
+      &:hover {
+        color: $bg-color !important;
+      }
+    }
+  }
+
+  .header-banner {
+    height: 200px;
+
+    .header-content {
+      padding: 200px 0 0 12%;
+      margin-left: 0;
+
+      p {
+        font-size: 22px !important;
+        padding-top: 0;
+      }
+
+      .slogan-down img {
+        @include size-img(27.16px, 25.16px);
+      }
+
+      pre {
+        @include font(UTM BryantLG, #505353, 14px);
+        margin: 0 0 0 -25px;
+      }
+
+      a {
+        @include button ($bg-color, 37.14px, 200px, 35px);
+        font-size: 16px;
+        padding: 12px 52px 12.52px 52px;
+        @include text-stoke(UTM BryantLG, 0.1px, $color);
+      }
+    }
+  }
+  
+  .header-footer {
+    height: 310px;
+  }
+}

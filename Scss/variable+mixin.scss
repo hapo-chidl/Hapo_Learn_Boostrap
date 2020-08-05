@@ -1,5 +1,6 @@
 $bg-color:  #B2D235;
 $color: white;
+$text-color: #11114E;
 
 @font-face {
     font-family: Open_sans;
@@ -21,10 +22,26 @@ $color: white;
     font-weight: bold;
     font-style: normal;
   } 
-
+@mixin font ($font-family, $color, $font-size){
+  font-family: $font-family;
+  color: $color;
+  font-size: $font-size;
+}
 @mixin button($background, $height, $width, $border-radius) {
     background-color: $background;
     height: $height;
     width: $width;
     border-radius: $border-radius;
 }
+
+@mixin text-stoke ($a,$b,$c){
+  font-family: $a;
+  -webkit-text-stroke: $b $c;
+}
+
+@mixin size-img ($width,$height){
+  width: $width;
+  height: $height;
+  
+}
+
