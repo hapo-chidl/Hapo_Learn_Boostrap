@@ -24,14 +24,14 @@
       }
 
       pre {
-        @include font(UTM BryantLG, #505353, 16px);
         margin: -5px 0 0 -45px;
+        @include font(UTM BryantLG, #505353, 16px);
       }
 
       a {
-        @include button ($bg-color, 37.14px, 200px, 35px);
         font-size: 16px;
         margin-top: -5px;
+        @include button ($bg-color, 37.14px, 200px, 35px);
       }
     }
   }
@@ -44,8 +44,8 @@
 @media only screen and (max-width: 425px) {
   .img-header {
     img {
-      @include sizeImage(150px, 26.75px);
       margin-left: 65%;
+      @include sizeImage(150px, 26.75px);
     }
   }
 
@@ -77,19 +77,19 @@
       }
 
       pre {
-        @include font(UTM BryantLG, #505353, 14px);
         margin: 0 0 0 -25px;
+        @include font(UTM BryantLG, #505353, 14px);
       }
 
       a {
-        @include button ($bg_color, 37.14px, 200px, 35px);
         font-size: 16px;
         padding: 12px 52px 12.52px 52px;
         @include textStoke(UTM BryantLG, 0.1px, $color);
+        @include button ($bg_color, 37.14px, 200px, 35px);
       }
     }
   }
-  
+
   .header-footer {
     height: 310px;
   }
