@@ -1,6 +1,6 @@
-$bg-color:  #B2D235;
+$bg_color:  #B2D235;
 $color: white;
-$text-color: #11114E;
+$text_color: #11114E;
 
 @font-face {
     font-family: Open_sans;
@@ -34,12 +34,12 @@ $text-color: #11114E;
     border-radius: $border-radius;
 }
 
-@mixin text-stoke ($a,$b,$c){
+@mixin textStoke ($a, $b, $c){
   font-family: $a;
   -webkit-text-stroke: $b $c;
 }
 
-@mixin size-img ($width,$height){
+@mixin sizeImage ($width, $height){
   width: $width;
   height: $height;
   

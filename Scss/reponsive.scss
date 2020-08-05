@@ -2,7 +2,7 @@
 @media only screen and (max-width: 768px) {
   .img-header {
     img {
-      @include size-img(300px, 61.74px);
+      @include sizeImage(300px, 61.74px);
     }
   }
 
@@ -44,7 +44,7 @@
 @media only screen and (max-width: 425px) {
   .img-header {
     img {
-      @include size-img(150px, 26.75px);
+      @include sizeImage(150px, 26.75px);
       margin-left: 65%;
     }
   }
@@ -60,7 +60,6 @@
       }
     }
   }
-
   .header-banner {
     height: 200px;
 
@@ -74,7 +73,7 @@
       }
 
       .slogan-down img {
-        @include size-img(27.16px, 25.16px);
+        @include sizeImage(27.16px, 25.16px);
       }
 
       pre {
@@ -83,10 +82,10 @@
       }
 
       a {
-        @include button ($bg-color, 37.14px, 200px, 35px);
+        @include button ($bg_color, 37.14px, 200px, 35px);
         font-size: 16px;
         padding: 12px 52px 12.52px 52px;
-        @include text-stoke(UTM BryantLG, 0.1px, $color);
+        @include textStoke(UTM BryantLG, 0.1px, $color);
       }
     }
   }
