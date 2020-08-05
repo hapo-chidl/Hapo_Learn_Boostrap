@@ -1,0 +1,37 @@
+@import 'variable+mixin.scss';
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  display: inline;
+}
+.navbar-toggler.collapsed .close-icon {
+   display: none;
+}    
+
+.menu-header {
+  li {
+    padding-left: 10px;
+    margin-top: 12px;
+    a {
+      text-decoration: none;
+      font: normal bold 15px/19px 'Open-sans';
+      text-transform: uppercase;
+      color: #505353 !important;
+      padding: 7px 15px 8px 20px;
+      &:hover {
+        color: $color !important;
+        background-color: $bg-color;
+        border-radius: 17px;
+       }
+    
+  }
+}
+
+
+}
+

@@ -1,0 +1,37 @@
+
+@import '../Scss/variable+mixin.scss';
+
+@media only screen and (max-width: 768px) {    
+    .img-header {
+        img {
+            width: 300px !important;
+            height: 61.74px !important; 
+    }
+    }
+    .menu-header {
+        li {
+            padding: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+        .img-header {
+            img {
+            width: 150px !important;
+            height: 26.75px !important;
+            margin-left: 40%;
+        }
+        }
+        .menu-header {
+                margin-left: 32%;
+                a {
+                    font: normal bold 16px/22px 'Open-sans' !important;
+                    &:hover {
+                        color: $bg-color !important;
+                    }
+
+                }
+            }
+    }
+       
