@@ -30,7 +30,7 @@
 }
 
 .card-body {
-  h5 {
+  .card-title {
     font: normal normal 30px 'UTM BryabtLG';
     color: #B2D235;
     text-align: center;
@@ -38,8 +38,7 @@
     -webkit-text-stroke: 0.5px #B2D235;
   }
 
-  p {
-    height: 80px;
+  .card-text {
     font: normal normal 14px 'UTM BryantLG';
     text-align: center;
     letter-spacing: -0.05em;
