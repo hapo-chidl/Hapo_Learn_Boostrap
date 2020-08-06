@@ -1,0 +1,96 @@
+@import '../Scss/variable+mixin.scss';
+@media only screen and (max-width: 768px) {
+  .img-header {
+    img {
+      @include sizeImage(300px, 61.74px);
+    }
+  }
+
+  .menu-header {
+    li {
+      padding: 0;
+    }
+  }
+
+  .header-banner {
+    height: 350px;
+
+    .header-content {
+      padding: 70px 0 0 0;
+      margin-left: -40px;
+
+      p {
+        font-size: 28px !important;
+      }
+
+      pre {
+        margin: -5px 0 0 -45px;
+        @include font(UTM BryantLG, #505353, 16px);
+      }
+
+      a {
+        font-size: 16px;
+        margin-top: -5px;
+        @include button ($bg_color, 37.14px, 200px, 35px);
+      }
+    }
+  }
+
+  .header-footer {
+    height: 122px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .img-header {
+    img {
+      margin-left: 65%;
+      @include sizeImage(150px, 26.75px);
+    }
+  }
+
+  .menu-header {
+    margin-left: 32%;
+
+    a {
+      font: normal bold 16px/22px 'Open-sans' !important;
+
+      &:hover {
+        color: $bg_color !important;
+      }
+    }
+  }
+  .header-banner {
+    height: 200px;
+
+    .header-content {
+      padding: 200px 0 0 12%;
+      margin-left: 0;
+
+      p {
+        font-size: 22px !important;
+        padding-top: 0;
+      }
+
+      .slogan-down img {
+        @include sizeImage(27.16px, 25.16px);
+      }
+
+      pre {
+        margin: 0 0 0 -25px;
+        @include font(UTM BryantLG, #505353, 14px);
+      }
+
+      a {
+        font-size: 16px;
+        padding: 12px 52px 12.52px 52px;
+        @include textStoke(UTM BryantLG, 0.1px, $color);
+        @include button ($bg_color, 37.14px, 200px, 35px);
+      }
+    }
+  }
+
+  .header-footer {
+    height: 310px;
+  }
+}
