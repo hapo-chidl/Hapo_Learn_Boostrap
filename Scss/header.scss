@@ -81,7 +81,7 @@ p {
     color: $color;
     text-decoration: none;
     @include textStoke (UTM BryantLG_B, 1px, $color);
-    @include button($bg-color, 70px, 377px, 35px);
+    @include button($bg_color, 70px, 377px, 35px);
 
     &:hover {
       opacity: 0.7;
