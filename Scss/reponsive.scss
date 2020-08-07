@@ -86,6 +86,21 @@
       font-size: 28px;
     }
   }
+
+  .why-hapolearn {
+    height: 420px;
+  }
+  .why-hapo-content {
+    margin-top: 0;
+    .menu {
+      margin-left: 0;
+
+      ul li {
+        font-size: 16px;
+        list-style-image: url("../image/li-reponsive.png");
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -175,6 +190,32 @@
 
     img {
       @include sizeImage(33px, 18px);
+    }
+  }
+
+  .why-hapolearn {
+    height: 569px;
+
+    .image img {
+      margin: -32% 0 -10px;
+    }
+
+    .why-header-slogan {
+     margin: -80px 0 0 280px;
+
+      p {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .why-hapo-content {
+    .menu {
+      margin: 20px 0 0 20px;
+
+      ul li {
+        font-size: 14px !important;
+      }
     }
   }
 }
