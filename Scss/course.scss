@@ -1,4 +1,8 @@
 @import 'variable+mixin.scss';
+.course {
+  margin-top: -120px;
+}
+
 .backend-course {
   .card {
     height: 470px;
@@ -6,7 +10,6 @@
     margin-left: 3%;
 
     .image {
-      padding-top: 30px;
       height: 215px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
       border-radius: 15px 15px 0 0;
@@ -17,15 +20,15 @@
 
 .frontend-course {
   @extend .backend-course;
-  margin-top: -120px;
+  margin-top: -150px;
 
   .card {
     height: 395px;
 
     .image {
       height: 194px;
-      padding-top: 0;
     }
+
   }
 }
 
@@ -34,7 +37,6 @@
     font: normal normal 30px 'UTM BryabtLG';
     color: #B2D235;
     text-align: center;
-    padding: 5px 0 5px 0;
     -webkit-text-stroke: 0.5px #B2D235;
   }
 
@@ -49,7 +51,6 @@
 
 .card-body {
   a {
-    margin-left: 12%;
     font: normal bold 18px/22px 'UTM BryantLG_B';
     color: $color;
     text-decoration: none;
@@ -88,22 +89,15 @@
 .ruby-course {
   background: #E14E40;
 
-  img {
-    padding-top: 25px;
-  }
 }
 
 .java-course {
   background-color: #1B75BB;
-
-  a {
-    padding-top: 20px;
-  }
 }
 
 .other-course {
-  margin: 100px 0 0 28%;
-  font: normal bold 60px 'UTM BryantLG_B';
+  margin: 70px 0 15px 30%;
+  
   letter-spacing: -0.02em;
   color: $text_color;
   -webkit-text-stroke: 0.5px $text_color;
@@ -111,6 +105,7 @@
 }
 
 .other-course p {
+  font: normal bold 65px 'UTM BryantLG_B';
   text-align: center;
   border-radius: 3px;
   border-bottom: 5px solid $bg_color;
@@ -118,7 +113,7 @@
 }
 
 .all-of-course {
-  padding-top: 5%;
+ 
   text-align: center;
   margin-bottom: 100px;
   cursor: pointer;

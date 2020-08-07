@@ -1,5 +1,6 @@
 @import '../Scss/variable+mixin.scss';
 @media only screen and (max-width: 768px) {
+
   .img-header {
     img {
       @include sizeImage(300px, 61.74px);
@@ -39,6 +40,52 @@
   .header-footer {
     height: 122px;
   }
+
+  .course {
+    margin-top: -70px !important;
+  }
+
+  .card {
+    height: 320px !important;
+
+    .image {
+      height: 131.25px !important;
+    }
+  }
+
+  .card-body {
+    .card-title {
+      font-size: 17.5px;
+      margin-top: -15px;
+    }
+
+    .card-text {
+      margin-top: -10px;
+      padding-bottom: 5px;
+      font-size: 13px;
+    }
+
+    a {
+      margin-top: -150px;
+      font-size: 10px;
+      padding: 5px 20px 7px 20px;
+      @include button($bg_color, 24.45px, 116.42px, 35px);
+    }
+  }
+
+  .other-course {
+    margin: 40px 0 0 33%;
+    @include sizeImage (230px, 220px);
+    p {
+      font-size: 35px;
+    }
+  }
+
+  .all-of-course {
+    a {
+      font-size: 28px;
+    }
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -54,12 +101,12 @@
 
     a {
       font: normal bold 16px/22px 'Open-sans' !important;
-
       &:hover {
         color: $bg_color !important;
       }
     }
   }
+
   .header-banner {
     height: 200px;
 
@@ -92,5 +139,42 @@
 
   .header-footer {
     height: 310px;
+  }
+
+  .card {
+    width: 280px;
+    height: 360px !important;
+    margin-bottom: 20px;
+    justify-content: center;
+
+    .image {
+      height: 163px !important;
+    }
+  }
+  
+  .frontend-course {
+    margin-top: 30px !important;
+  }
+
+  .card-body {
+    a {
+      font-size: 18px;
+      padding: 9px 37px 11px 36px;
+      @include button ($bg_color, 200px, 42px, 35px);
+    }
+  }
+
+  .other-course {
+    font-size: 38px;
+    margin: 20px 0 0 80px;
+    @include sizeImage (243px, 49px)
+  }
+
+  .all-of-course a {
+    font-size: 24px;
+
+    img {
+      @include sizeImage(33px, 18px);
+    }
   }
 }

@@ -24,7 +24,7 @@ body {
   text-decoration: none;
   font: normal bold 15px/19px 'Open-sans';
   text-transform: uppercase;
-  color: #505353;
+  color: $text_card_color;
   padding: 7px 15px 8px 20px;
 
   &:hover {
