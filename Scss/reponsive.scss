@@ -115,6 +115,38 @@
       }
     }
   }
+  
+  .start-learning {
+
+    margin-top: -100px;
+
+    .start-learn-slogan {
+      p {
+      font-size: 35px ;
+      }
+    }
+
+    .btn-start-learning {
+      a {
+        font-size: 20px;
+        @include button($color, 46.42px, 250px, 35px);
+      }
+    }
+  }
+
+  .statistic-slogan {
+    font-size: 35px !important;
+  }
+
+  .statistic {
+    .menu-content {
+      font-size: 30px !important;
+    }
+
+    .number {
+      font-size: 30px !important;
+    }
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -268,4 +300,36 @@
       margin-top: 128px !important;
     }
   }
+
+  .start-learning {
+    margin-top: -100px;
+
+    .start-learn-slogan {
+      p {
+      font-size: 23px;
+    }
+
+    .btn-start-learning {
+      a {
+        font-size: 18px;
+        @include button($color, 37px, 200px, 35px);
+      }
+    }
+  }
 }
+
+  .statistic-slogan {
+    font-size: 30px !important;
+  }
+
+  .statistic {
+    .menu-content {
+      font-size: 25px !important;
+    }
+
+    .number {
+      font-size: 25px !important;
+    }
+  }
+}
+
