@@ -4,18 +4,24 @@
 }
 
 .feed-back-slogan {
-  .fb-slogan-up p {
+  .fb-slogan-up 
+  {
+    p {
     color: $text_color;
     border-bottom: 5px solid $bg_color;
     border-radius: 3px;
     -webkit-text-stroke: 1px $text_color;
     font: bold 75px 'UTM BryantLG_B';
+    }
   }
 
-  .fb-slogan-down p {
+  .fb-slogan-down 
+  {
+    p {
     color: $text_card_color;
     -webkit-text-stroke: 0.3px $text_card_color;
     font: 25px 'UTM BryantLG';
+    }
   }
 }
 
