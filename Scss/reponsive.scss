@@ -117,12 +117,12 @@
   }
   
   .start-learning {
-    height: 267px !important;
+    height: 267px ;
     margin-top: -100px;
 
     .start-learn-slogan {
       p {
-      font-size: 35px !important;
+      font-size: 35px ;
       }
     }
 
@@ -133,13 +133,13 @@
       }
     }
   }
+  
+  .statistic-slogan {
+    width: 130px !important;
+    font-size: 35px !important;
+  }
 
   .statistic {
-    b {
-      font-size: 35px !important;
-      width: 140px !important;
-    }
-
     .menu-content {
       font-size: 30px !important;
     }
@@ -308,7 +308,7 @@
 
     .start-learn-slogan {
       p {
-      font-size: 23px !important;
+      font-size: 23px;
     }
 
     .btn-start-learning {
@@ -319,17 +319,13 @@
     }
   }
 }
-  
+
+  .statistic-slogan {
+    width: 110px !important;
+    font-size: 30px !important;
+  }
+
   .statistic {
-    .menu {
-      margin-left: 10px;
-    }
-
-    b {
-      font-size: 30px !important;
-      width: 110px !important;
-    }
-
     .menu-content {
       font-size: 25px !important;
     }

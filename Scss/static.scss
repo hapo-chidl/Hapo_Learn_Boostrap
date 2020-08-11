@@ -1,15 +1,15 @@
 .statistic {
     height: 500px;
+
     .statistic-slogan {
       letter-spacing: -0.02em;
       color: $text_color;
       -webkit-text-stroke: 0.5px $text_color;
-      b {
         font: bold 70px 'UTM BryantLG_B';
-        width: 300px;
+        width: 250px;
         border-bottom: 4px solid $bg_color;
         border-radius: 3px;
-      }
+        
     }
   }
   
