@@ -4,23 +4,21 @@
 }
 
 .feed-back-slogan {
-  .fb-slogan-up 
-  {
+  .fb-slogan-up {
     p {
-    color: $text_color;
-    border-bottom: 5px solid $bg_color;
-    border-radius: 3px;
-    -webkit-text-stroke: 1px $text_color;
-    font: bold 75px 'UTM BryantLG_B';
+      color: $text_color;
+      border-bottom: 5px solid $bg_color;
+      border-radius: 3px;
+      -webkit-text-stroke: 1px $text_color;
+      font: bold 75px 'UTM BryantLG_B';
     }
   }
 
-  .fb-slogan-down 
-  {
+  .fb-slogan-down {
     p {
-    color: $text_card_color;
-    -webkit-text-stroke: 0.3px $text_card_color;
-    font: 25px 'UTM BryantLG';
+      color: $text_card_color;
+      -webkit-text-stroke: 0.3px $text_card_color;
+      font: 25px 'UTM BryantLG';
     }
   }
 }
@@ -38,7 +36,6 @@
 }
 
 .fb-user-content {
-
   &:after, &:before {
     content: '';
     border: solid transparent;
@@ -69,7 +66,7 @@
     font: normal bold 16px 'UTM BryantLG_B';
     color: $text_card_color;
   }
-
+  
   .checked {
     color: #F2C54F;
   }
