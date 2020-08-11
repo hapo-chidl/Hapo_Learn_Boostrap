@@ -5,16 +5,17 @@
 
 .feed-back-slogan {
   .fb-slogan-up p {
-    font: normal bold 75px 'UTM BryantLG_B';
     color: $text_color;
     border-bottom: 5px solid $bg_color;
     border-radius: 3px;
     -webkit-text-stroke: 1px $text_color;
+    font: bold 75px 'UTM BryantLG_B';
   }
+
   .fb-slogan-down p {
-    font: normal normal 25px 'UTM BryantLG';
     color: $text_card_color;
     -webkit-text-stroke: 0.3px $text_card_color;
+    font: 25px 'UTM BryantLG';
   }
 }
 
@@ -23,9 +24,10 @@
   border: 0.5px solid #E2E2E2;
   box-shadow: 1px 1px 5px 0.5px #969694;
   border-radius: 10px;
+
   p {
     border-left: 5px solid #D9DADC;
-    font: normal normal 16px 'UTM BryantLG';
+    font: 16px 'UTM BryantLG';
   }
 }
 
@@ -42,7 +44,7 @@
     border-width: 10px;
     margin: 25px 0 0 22px;
   }
-  
+
   &:before {
     border-top-color: #E2E2E2;
     border-width: 12px;
