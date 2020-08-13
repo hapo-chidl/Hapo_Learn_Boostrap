@@ -1,0 +1,46 @@
+.hapolearn-footer {
+    background-color: $text_card_color;
+  }
+
+  .hapolearn-footer .menu  a:hover {
+    -webkit-text-stroke-width: 1px;
+    text-decoration: underline;
+  }
+
+  .footer-text 
+  {  
+    margin-top: -20px;
+    span{
+      font: 18px 'UTM BryantLG';
+      color: $color;
+      margin-top: -35px;
+  }
+}
+
+  .menu-footer {
+  .menu-content {
+    ul {
+    list-style: none;
+    a {
+      font: bold 20px 'UTM BryantLG';
+    color: $color;
+    text-decoration: none;
+    }
+    }
+  }
+}
+  
+  .footer-image ul {
+    list-style: none;
+  }
+
+  .footer-end {
+    position: absolute;
+    background-color: #454545;
+
+    p{
+      text-align: center;
+      font: 16px/18px 'UTM BryantLG'; 
+      color: $color;
+    }
+  }

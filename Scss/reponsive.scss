@@ -117,7 +117,6 @@
   }
   
   .start-learning {
-
     margin-top: -100px;
 
     .start-learn-slogan {
@@ -147,6 +146,21 @@
       font-size: 30px !important;
     }
   }
+  
+  .footer-text span {
+    font-size: 14px !important;
+   
+  }
+
+  .menu-footer {
+
+    .menu-content {
+      a {
+        font-size: 16px !important;
+      }
+    }
+  }
+
 }
 
 @media only screen and (max-width: 425px) {
@@ -329,6 +343,24 @@
 
     .number {
       font-size: 25px !important;
+    }
+  }
+
+  .footer-text {
+    margin-top: -50px !important;
+    img {
+      @include sizeImage(150px, 31px);
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .footer-image {
+    margin-top: -80px;
+    margin-left: -20px;
+    img {
+      @include sizeImage(30px, 30px);
     }
   }
 }
