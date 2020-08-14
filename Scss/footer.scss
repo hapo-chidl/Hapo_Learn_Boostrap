@@ -64,7 +64,7 @@
         border-radius: 15px;
         color: #505353;
         -webkit-text-stroke: 0.3px;
-        font: 13px/17px 'Open_sans';
+        font: 12px/17px 'Open_sans';
         height: 55px;
         width: 265px;
       }
@@ -78,11 +78,11 @@
     .hapolearn-messenger-chatbox-login {
       p {
         color: #B3B3B3;
-        font: 13px/16px 'Open_sans';
+        font: 12px/16px 'Open_sans';
       }
     }
     .hapolearn-messenger-chatbox-name {
-      font: 13px/16px 'Open_sans';
+      font: 12px/16px 'Open_sans';
       color: #7F7F7F;
     }
   }
@@ -98,8 +98,8 @@
 .hapolearn-messenger-btnlogin {
   background: #3184F7;
   border: 2px solid red;
-  border-radius: 20px !important;
-  font: 13px/16px 'Open_sans';
+  border-radius: 15px !important;
+  font: 12px/16px 'Open_sans';
   color: $color;
 }
 

@@ -520,7 +520,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   border-radius: 15px;
   color: #505353;
   -webkit-text-stroke: 0.3px;
-  font: 13px/17px "Open_sans";
+  font: 12px/17px "Open_sans";
   height: 55px;
   width: 265px;
 }
@@ -532,10 +532,10 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
 }
 .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login p, .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login .header-content .content .slogan-up, .header-content .content .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login .slogan-up, .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login .header-content .slogan-down, .header-content .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login .slogan-down {
   color: #B3B3B3;
-  font: 13px/16px "Open_sans";
+  font: 12px/16px "Open_sans";
 }
 .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-name {
-  font: 13px/16px "Open_sans";
+  font: 12px/16px "Open_sans";
   color: #7F7F7F;
 }
 .hapolearn-messenger .hapolearn-messenger-icon {
@@ -549,8 +549,8 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
 .hapolearn-messenger-btnlogin {
   background: #3184F7;
   border: 2px solid red;
-  border-radius: 20px !important;
-  font: 13px/16px "Open_sans";
+  border-radius: 15px !important;
+  font: 12px/16px "Open_sans";
   color: white;
 }
 
@@ -857,7 +857,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   }
 
   .fb-user-content:before {
-    margin-top: 110px !important;
+    margin-top: 125px !important;
   }
 
   .start-learning {
