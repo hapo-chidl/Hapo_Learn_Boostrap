@@ -23,14 +23,15 @@
 .menu {
   p {
     color: $color;
-    font: normal bold 50px 'UTM BryantLG_B';
+    font: normal bold 65px 'UTM BryantLG_B';
     -webkit-text-stroke: 0.5px $color;
   }
   
   li {
     list-style-image: url("../image/li.png");
-    font: normal normal 20px 'UTM BryantLG';
+    font: normal normal 21px 'UTM BryantLG';
     letter-spacing: -0.05em;
+    color: $color;
     -webkit-text-stroke: 0.5px $color;
   }
 }

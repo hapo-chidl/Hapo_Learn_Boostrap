@@ -25,7 +25,7 @@
       }
 
       pre {
-        margin: -5px 0 0 -45px;
+        margin: -5px 0 0 -31px;
         @include font(UTM BryantLG, #505353, 16px);
       }
 
@@ -63,6 +63,10 @@
       margin-top: -10px;
       padding-bottom: 5px;
       font-size: 13px;
+      overflow: hidden;
+     display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
     }
 
     a {

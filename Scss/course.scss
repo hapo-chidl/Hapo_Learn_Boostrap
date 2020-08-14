@@ -1,6 +1,6 @@
 @import 'variable+mixin.scss';
 .course {
-  margin-top: -120px;
+  margin-top: -80px;
 }
 
 .backend-course {
@@ -34,10 +34,13 @@
 
 .card-body {
   .card-title {
-    font: normal normal 30px 'UTM BryabtLG';
-    color: #B2D235;
+    font: bold 30px/37px 'UTM BryantLG';
+    color: $bg_color;
     text-align: center;
-    -webkit-text-stroke: 0.5px #B2D235;
+    -webkit-text-stroke: 0.3px $bg_color;
+/* identical to box height */
+
+
   }
 
   .card-text {
@@ -113,15 +116,15 @@
 }
 
 .all-of-course {
- 
+  margin-top: 100px;
   text-align: center;
   margin-bottom: 100px;
   cursor: pointer;
 
-  a {
+  p {
     text-decoration: none;
     color: $bg_color;
-    font: normal bold 45px 'UTM BryantLG_B_B';
+    font: normal bold 45px 'UTM BryantLG_B';
     letter-spacing: -0.02em;
     -webkit-text-stroke: 0.5px $bg_color;
   }
@@ -129,5 +132,6 @@
   &:hover {
     transform: scale(1.1);
     transition: all ease-in-out 0.5s;
+    color: $bg_color;
   }
 }
