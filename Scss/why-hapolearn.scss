@@ -28,7 +28,8 @@
   }
   
   li {
-    list-style-image: url("../image/li.png");
+    //list-style-image: url("../image/li.png");
+    list-style: none;
     font: normal normal 21px 'UTM BryantLG';
     letter-spacing: -0.05em;
     color: $color;

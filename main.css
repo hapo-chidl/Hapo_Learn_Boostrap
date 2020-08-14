@@ -20,19 +20,8 @@ body {
   width: 100%;
 }
 
-.slick-slide {
-  outline: none;
-}
-.slick-slide:focus, .slick-slide a {
-  outline: none;
-}
-
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
   display: inline;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba(80, 83, 83, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
 }
 
 .navbar-toggler.collapsed .close-icon {
@@ -60,7 +49,7 @@ body {
   border-radius: 17px;
 }
 
-p, .header-content .slogan-down, .header-content .content .slogan-up {
+p, .header-content .slogan-down, .content .slogan-up {
   font-size: 45px;
   color: #11114E;
 }
@@ -71,10 +60,11 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   background-size: cover;
   height: 655px;
 }
-.header-content .content {
-  padding: 200px 0 0 0;
+
+.content {
+  padding: 200px 0 0 5%;
 }
-.header-content .content .slogan-up {
+.content .slogan-up {
   margin: 0 0 0 59px;
   font-family: UTM BryantLG;
   -webkit-text-stroke: 1px #11114E;
@@ -140,12 +130,12 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   font-style: normal;
 }
 .course {
-  margin-top: -80px;
+  margin-top: -120px;
 }
 
 .backend-course .card, .frontend-course .card {
   height: 470px;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 0 0;
   margin-left: 3%;
 }
 .backend-course .card .image, .frontend-course .card .image {
@@ -166,11 +156,10 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
 }
 
 .card-body .card-title {
-  font: bold 30px/37px "UTM BryantLG";
+  font: normal normal 30px "UTM BryabtLG";
   color: #B2D235;
   text-align: center;
-  -webkit-text-stroke: 0.3px #B2D235;
-  /* identical to box height */
+  -webkit-text-stroke: 0.5px #B2D235;
 }
 .card-body .card-text {
   font: normal normal 14px "UTM BryantLG";
@@ -225,7 +214,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
 }
 
 .other-course {
-  margin: 70px 0 15px 32%;
+  margin: 70px 0 15px 30%;
   letter-spacing: -0.02em;
   color: #11114E;
   -webkit-text-stroke: 0.5px #11114E;
@@ -233,7 +222,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   height: 250px;
 }
 
-.other-course p, .other-course .header-content .content .slogan-up, .header-content .content .other-course .slogan-up, .other-course .header-content .slogan-down, .header-content .other-course .slogan-down {
+.other-course p, .other-course .content .slogan-up, .content .other-course .slogan-up, .other-course .header-content .slogan-down, .header-content .other-course .slogan-down {
   font: normal bold 65px "UTM BryantLG_B";
   text-align: center;
   border-radius: 3px;
@@ -242,22 +231,20 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
 }
 
 .all-of-course {
-  margin-top: 100px;
   text-align: center;
   margin-bottom: 100px;
   cursor: pointer;
 }
-.all-of-course p, .all-of-course .header-content .content .slogan-up, .header-content .content .all-of-course .slogan-up, .all-of-course .header-content .slogan-down, .header-content .all-of-course .slogan-down {
+.all-of-course a {
   text-decoration: none;
   color: #B2D235;
-  font: normal bold 50px "UTM BryantLG_B";
+  font: normal bold 45px "UTM BryantLG_B_B";
   letter-spacing: -0.02em;
   -webkit-text-stroke: 0.5px #B2D235;
 }
 .all-of-course:hover {
   transform: scale(1.1);
   transition: all ease-in-out 0.5s;
-  color: #B2D235;
 }
 
 @font-face {
@@ -296,20 +283,19 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   margin-left: -7%;
 }
 
-.menu p, .menu .header-content .content .slogan-up, .header-content .content .menu .slogan-up, .menu .header-content .slogan-down, .header-content .menu .slogan-down {
+.menu p, .menu .content .slogan-up, .content .menu .slogan-up, .menu .header-content .slogan-down, .header-content .menu .slogan-down {
   color: white;
-  font: normal bold 65px "UTM BryantLG_B";
+  font: normal bold 50px "UTM BryantLG_B";
   -webkit-text-stroke: 0.5px white;
 }
 .menu li {
-  list-style: none;
-  font: normal normal 21px "UTM BryantLG";
+  list-style-image: url("../image/li.png");
+  font: normal normal 20px "UTM BryantLG";
   letter-spacing: -0.05em;
-  color: white;
   -webkit-text-stroke: 0.5px white;
 }
 
-.why-hapo-header .why-header-slogan p, .why-hapo-header .why-header-slogan .header-content .content .slogan-up, .header-content .content .why-hapo-header .why-header-slogan .slogan-up, .why-hapo-header .why-header-slogan .header-content .slogan-down, .header-content .why-hapo-header .why-header-slogan .slogan-down {
+.why-hapo-header .why-header-slogan p, .why-hapo-header .why-header-slogan .content .slogan-up, .content .why-hapo-header .why-header-slogan .slogan-up, .why-hapo-header .why-header-slogan .header-content .slogan-down, .header-content .why-hapo-header .why-header-slogan .slogan-down {
   margin-left: -80px;
   color: white;
   font: normal bold 45px "UTM BryantLG_B";
@@ -320,14 +306,14 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   height: 650px;
 }
 
-.feed-back-slogan .fb-slogan-up p, .feed-back-slogan .fb-slogan-up .header-content .content .slogan-up, .header-content .content .feed-back-slogan .fb-slogan-up .slogan-up, .feed-back-slogan .fb-slogan-up .header-content .slogan-down, .header-content .feed-back-slogan .fb-slogan-up .slogan-down {
+.feed-back-slogan .fb-slogan-up p, .feed-back-slogan .fb-slogan-up .content .slogan-up, .content .feed-back-slogan .fb-slogan-up .slogan-up, .feed-back-slogan .fb-slogan-up .header-content .slogan-down, .header-content .feed-back-slogan .fb-slogan-up .slogan-down {
   color: #11114E;
   border-bottom: 5px solid #B2D235;
   border-radius: 3px;
   -webkit-text-stroke: 1px #11114E;
   font: bold 75px "UTM BryantLG_B";
 }
-.feed-back-slogan .fb-slogan-down p, .feed-back-slogan .fb-slogan-down .header-content .content .slogan-up, .header-content .content .feed-back-slogan .fb-slogan-down .slogan-up, .feed-back-slogan .fb-slogan-down .header-content .slogan-down, .header-content .feed-back-slogan .fb-slogan-down .slogan-down {
+.feed-back-slogan .fb-slogan-down p, .feed-back-slogan .fb-slogan-down .content .slogan-up, .content .feed-back-slogan .fb-slogan-down .slogan-up, .feed-back-slogan .fb-slogan-down .header-content .slogan-down, .header-content .feed-back-slogan .fb-slogan-down .slogan-down {
   color: #505353;
   -webkit-text-stroke: 0.3px #505353;
   font: 25px "UTM BryantLG";
@@ -339,7 +325,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   box-shadow: 1px 1px 5px 0.5px #969694;
   border-radius: 10px;
 }
-.fb-user-content p, .fb-user-content .header-content .content .slogan-up, .header-content .content .fb-user-content .slogan-up, .fb-user-content .header-content .slogan-down, .header-content .fb-user-content .slogan-down {
+.fb-user-content p, .fb-user-content .content .slogan-up, .content .fb-user-content .slogan-up, .fb-user-content .header-content .slogan-down, .header-content .fb-user-content .slogan-down {
   border-left: 5px solid #D9DADC;
   font: 16px "UTM BryantLG";
 }
@@ -365,7 +351,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   color: #11114E;
   -webkit-text-stroke: 0.3px #11114E;
 }
-.user-comment p, .user-comment .header-content .content .slogan-up, .header-content .content .user-comment .slogan-up, .user-comment .header-content .slogan-down, .header-content .user-comment .slogan-down {
+.user-comment p, .user-comment .content .slogan-up, .content .user-comment .slogan-up, .user-comment .header-content .slogan-down, .header-content .user-comment .slogan-down {
   font: normal bold 16px "UTM BryantLG_B";
   color: #505353;
 }
@@ -405,7 +391,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   background-size: cover;
 }
 
-.start-learning p, .start-learning .header-content .content .slogan-up, .header-content .content .start-learning .slogan-up, .start-learning .header-content .slogan-down, .header-content .start-learning .slogan-down {
+.start-learning p, .start-learning .content .slogan-up, .content .start-learning .slogan-up, .start-learning .header-content .slogan-down, .header-content .start-learning .slogan-down {
   font: bolder 60px "UTM BryantLG";
   color: white;
   -webkit-text-stroke: 1px white;
@@ -426,41 +412,23 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   letter-spacing: -0.02em;
   color: #11114E;
   -webkit-text-stroke: 0.5px #11114E;
-  font: bold 75px "UTM BryantLG_B";
+  font: bold 70px "UTM BryantLG_B";
   border-bottom: 4px solid #B2D235;
   border-radius: 3px;
 }
 
 .start-menu .menu .menu-content {
-  font: bold 55px "UTM BryantLG";
+  font: bold 50px "UTM BryantLG_B";
   letter-spacing: -0.05em;
   color: #505353;
 }
 .start-menu .menu .number {
-  font: bold 55px "UTM BryantLG";
+  font: bold 50px "UTM BryantLG_B";
   letter-spacing: -0.05em;
   color: #B2D235;
   -webkit-text-stroke: 0.4px #B2D235;
 }
 
-@font-face {
-  font-family: Open_sans;
-  src: url("../Font/open-sans/OpenSans-Regular.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: UTM BryantLG;
-  src: url("../Font/utm-bryantlg.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: UTM BryantLG_B;
-  src: url("../Font/utm-bryantlg-b.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
 .hapolearn-footer {
   background-color: #505353;
 }
@@ -482,13 +450,10 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
 .menu-footer .menu-content ul {
   list-style: none;
 }
-.menu-footer .menu-content ul li a {
+.menu-footer .menu-content ul a {
   font: bold 20px "UTM BryantLG";
   color: white;
   text-decoration: none;
-}
-.menu-footer .menu-content ul li a:hover {
-  text-decoration: underline;
 }
 
 .footer-image ul {
@@ -496,8 +461,12 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
 }
 
 .footer-end {
+  position: absolute;
   background-color: #454545;
-  font: 16px "UTM BryantLG";
+}
+.footer-end p, .footer-end .content .slogan-up, .content .footer-end .slogan-up, .footer-end .header-content .slogan-down, .header-content .footer-end .slogan-down {
+  text-align: center;
+  font: 16px/18px "UTM BryantLG";
   color: white;
 }
 
@@ -515,14 +484,14 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
 .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text img {
   height: 35px;
 }
-.hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text p, .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text .header-content .content .slogan-up, .header-content .content .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text .slogan-up, .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text .header-content .slogan-down, .header-content .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text .slogan-down {
+.hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text p, .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text .content .slogan-up, .content .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text .slogan-up, .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text .header-content .slogan-down, .header-content .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text .slogan-down {
+  margin-top: 5px;
+  padding: 10px;
   background-color: #F1F0F0;
   border-radius: 15px;
   color: #505353;
   -webkit-text-stroke: 0.3px;
-  font: 13px/17px "Open_sans";
-  height: 55px;
-  width: 265px;
+  font: 12px/17px "Open Sans";
 }
 .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text i {
   color: #C4C4C4;
@@ -530,12 +499,13 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   cursor: pointer;
   margin-top: -10px;
 }
-.hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login p, .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login .header-content .content .slogan-up, .header-content .content .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login .slogan-up, .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login .header-content .slogan-down, .header-content .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login .slogan-down {
+.hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login p, .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login .content .slogan-up, .content .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login .slogan-up, .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login .header-content .slogan-down, .header-content .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login .slogan-down {
   color: #B3B3B3;
-  font: 13px/16px "Open_sans";
+  text-align: center;
+  font: 12px/16px "Open Sans";
 }
 .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-name {
-  font: 13px/16px "Open_sans";
+  font: 12px/16px "Open Sans";
   color: #7F7F7F;
 }
 .hapolearn-messenger .hapolearn-messenger-icon {
@@ -549,13 +519,9 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
 .hapolearn-messenger-btnlogin {
   background: #3184F7;
   border: 2px solid red;
-  border-radius: 20px !important;
-  font: 13px/16px "Open_sans";
+  border-radius: 20px;
+  font: 12px/16px "Open Sans";
   color: white;
-}
-
-.hapolearn-messenger-chatbox-text p, .hapolearn-messenger-chatbox-text .header-content .content .slogan-up, .header-content .content .hapolearn-messenger-chatbox-text .slogan-up, .hapolearn-messenger-chatbox-text .header-content .slogan-down, .header-content .hapolearn-messenger-chatbox-text .slogan-down {
-  padding-top: 7px;
 }
 
 @font-face {
@@ -597,7 +563,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
     font-size: 28px !important;
   }
   .header-content .content pre {
-    margin: -5px 0 0 -31px;
+    margin: -5px 0 0 -45px;
     font-family: UTM BryantLG;
     color: #505353;
     font-size: 16px;
@@ -605,7 +571,6 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   .header-content .content a {
     font-size: 16px;
     margin-top: -5px;
-    margin-left: 55px;
     background-color: #B2D235;
     height: 37.14px;
     width: 200px;
@@ -628,17 +593,13 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   }
 
   .card-body .card-title {
-    font-size: 18px;
+    font-size: 17.5px;
     margin-top: -15px;
   }
   .card-body .card-text {
     margin-top: -10px;
     padding-bottom: 5px;
     font-size: 13px;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
   }
   .card-body a {
     margin-top: -150px;
@@ -655,12 +616,12 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
     width: 230px;
     height: 220px;
   }
-  .other-course p, .other-course .header-content .content .slogan-up, .header-content .content .other-course .slogan-up, .other-course .header-content .slogan-down, .header-content .other-course .slogan-down {
+  .other-course p, .other-course .content .slogan-up, .content .other-course .slogan-up, .other-course .header-content .slogan-down, .header-content .other-course .slogan-down {
     font-size: 35px;
   }
 
-  .all-of-course p, .all-of-course .header-content .content .slogan-up, .header-content .content .all-of-course .slogan-up, .all-of-course .header-content .slogan-down, .header-content .all-of-course .slogan-down {
-    font-size: 28px !important;
+  .all-of-course a {
+    font-size: 28px;
   }
 
   .why-hapolearn {
@@ -675,19 +636,20 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   }
   .why-hapo-content .menu ul li {
     font-size: 16px;
+    list-style-image: url("../image/li-reponsive.png");
   }
 
-  .feed-back-slogan .fb-slogan-up p, .feed-back-slogan .fb-slogan-up .header-content .content .slogan-up, .header-content .content .feed-back-slogan .fb-slogan-up .slogan-up, .feed-back-slogan .fb-slogan-up .header-content .slogan-down, .header-content .feed-back-slogan .fb-slogan-up .slogan-down {
+  .feed-back-slogan .fb-slogan-up p, .feed-back-slogan .fb-slogan-up .content .slogan-up, .content .feed-back-slogan .fb-slogan-up .slogan-up, .feed-back-slogan .fb-slogan-up .header-content .slogan-down, .header-content .feed-back-slogan .fb-slogan-up .slogan-down {
     font-size: 40px;
   }
-  .feed-back-slogan .fb-slogan-down p, .feed-back-slogan .fb-slogan-down .header-content .content .slogan-up, .header-content .content .feed-back-slogan .fb-slogan-down .slogan-up, .feed-back-slogan .fb-slogan-down .header-content .slogan-down, .header-content .feed-back-slogan .fb-slogan-down .slogan-down {
+  .feed-back-slogan .fb-slogan-down p, .feed-back-slogan .fb-slogan-down .content .slogan-up, .content .feed-back-slogan .fb-slogan-down .slogan-up, .feed-back-slogan .fb-slogan-down .header-content .slogan-down, .header-content .feed-back-slogan .fb-slogan-down .slogan-down {
     font-size: 18px;
   }
 
   .start-learning {
     margin-top: -100px;
   }
-  .start-learning .start-learn-slogan p, .start-learning .start-learn-slogan .header-content .content .slogan-up, .header-content .content .start-learning .start-learn-slogan .slogan-up, .start-learning .start-learn-slogan .header-content .slogan-down, .header-content .start-learning .start-learn-slogan .slogan-down {
+  .start-learning .start-learn-slogan p, .start-learning .start-learn-slogan .content .slogan-up, .content .start-learning .start-learn-slogan .slogan-up, .start-learning .start-learn-slogan .header-content .slogan-down, .header-content .start-learning .start-learn-slogan .slogan-down {
     font-size: 35px;
   }
   .start-learning .btn-start-learning a {
@@ -699,19 +661,16 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   }
 
   .statistic-slogan {
-    font-size: 45px !important;
+    font-size: 35px !important;
   }
 
   .statistic .menu-content {
-    font-size: 35px !important;
+    font-size: 30px !important;
   }
   .statistic .number {
-    font-size: 35px !important;
+    font-size: 30px !important;
   }
 
-  .footer-text {
-    margin-top: -70px;
-  }
   .footer-text span {
     font-size: 14px !important;
   }
@@ -748,7 +707,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
     height: 200px;
   }
   .header-banner .header-content .content {
-    padding: 230px 0 0 8%;
+    padding: 230px 0 0 12%;
     margin-left: 0;
   }
   .header-banner .header-content .content p, .header-banner .header-content .content .slogan-up, .header-banner .header-content .content .slogan-down {
@@ -811,10 +770,10 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
     height: 49px;
   }
 
-  .all-of-course p, .all-of-course .header-content .content .slogan-up, .header-content .content .all-of-course .slogan-up, .all-of-course .header-content .slogan-down, .header-content .all-of-course .slogan-down {
-    font-size: 24px !important;
+  .all-of-course a {
+    font-size: 24px;
   }
-  .all-of-course p img, .all-of-course .header-content .content .slogan-up img, .header-content .content .all-of-course .slogan-up img, .all-of-course .header-content .slogan-down img, .header-content .all-of-course .slogan-down img {
+  .all-of-course a img {
     width: 33px;
     height: 18px;
   }
@@ -828,7 +787,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   .why-hapolearn .why-header-slogan {
     margin: -80px 0 0 280px;
   }
-  .why-hapolearn .why-header-slogan p, .why-hapolearn .why-header-slogan .header-content .content .slogan-up, .header-content .content .why-hapolearn .why-header-slogan .slogan-up, .why-hapolearn .why-header-slogan .header-content .slogan-down, .header-content .why-hapolearn .why-header-slogan .slogan-down {
+  .why-hapolearn .why-header-slogan p, .why-hapolearn .why-header-slogan .content .slogan-up, .content .why-hapolearn .why-header-slogan .slogan-up, .why-hapolearn .why-header-slogan .header-content .slogan-down, .header-content .why-hapolearn .why-header-slogan .slogan-down {
     font-size: 35px;
   }
 
@@ -839,31 +798,31 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
     font-size: 14px !important;
   }
 
-  .feed-back-slogan .fb-slogan-up p, .feed-back-slogan .fb-slogan-up .header-content .content .slogan-up, .header-content .content .feed-back-slogan .fb-slogan-up .slogan-up, .feed-back-slogan .fb-slogan-up .header-content .slogan-down, .header-content .feed-back-slogan .fb-slogan-up .slogan-down {
+  .feed-back-slogan .fb-slogan-up p, .feed-back-slogan .fb-slogan-up .content .slogan-up, .content .feed-back-slogan .fb-slogan-up .slogan-up, .feed-back-slogan .fb-slogan-up .header-content .slogan-down, .header-content .feed-back-slogan .fb-slogan-up .slogan-down {
     font-size: 35px;
   }
-  .feed-back-slogan .fb-slogan-down p, .feed-back-slogan .fb-slogan-down .header-content .content .slogan-up, .header-content .content .feed-back-slogan .fb-slogan-down .slogan-up, .feed-back-slogan .fb-slogan-down .header-content .slogan-down, .header-content .feed-back-slogan .fb-slogan-down .slogan-down {
+  .feed-back-slogan .fb-slogan-down p, .feed-back-slogan .fb-slogan-down .content .slogan-up, .content .feed-back-slogan .fb-slogan-down .slogan-up, .feed-back-slogan .fb-slogan-down .header-content .slogan-down, .header-content .feed-back-slogan .fb-slogan-down .slogan-down {
     font-size: 16px;
   }
 
-  .fb-content .fb-user-content p, .fb-content .fb-user-content .header-content .content .slogan-up, .header-content .content .fb-content .fb-user-content .slogan-up, .fb-content .fb-user-content .header-content .slogan-down, .header-content .fb-content .fb-user-content .slogan-down {
+  .fb-content .fb-user-content p, .fb-content .fb-user-content .content .slogan-up, .content .fb-content .fb-user-content .slogan-up, .fb-content .fb-user-content .header-content .slogan-down, .header-content .fb-content .fb-user-content .slogan-down {
     font-size: 14px;
   }
   .fb-content .user-comment b {
     font-size: 16px;
   }
-  .fb-content .user-comment p, .fb-content .user-comment .header-content .content .slogan-up, .header-content .content .fb-content .user-comment .slogan-up, .fb-content .user-comment .header-content .slogan-down, .header-content .fb-content .user-comment .slogan-down {
+  .fb-content .user-comment p, .fb-content .user-comment .content .slogan-up, .content .fb-content .user-comment .slogan-up, .fb-content .user-comment .header-content .slogan-down, .header-content .fb-content .user-comment .slogan-down {
     font-size: 14px;
   }
 
   .fb-user-content:before {
-    margin-top: 110px !important;
+    margin-top: 128px !important;
   }
 
   .start-learning {
     margin-top: -100px;
   }
-  .start-learning .start-learn-slogan p, .start-learning .start-learn-slogan .header-content .content .slogan-up, .header-content .content .start-learning .start-learn-slogan .slogan-up, .start-learning .start-learn-slogan .header-content .slogan-down, .header-content .start-learning .start-learn-slogan .slogan-down {
+  .start-learning .start-learn-slogan p, .start-learning .start-learn-slogan .content .slogan-up, .content .start-learning .start-learn-slogan .slogan-up, .start-learning .start-learn-slogan .header-content .slogan-down, .header-content .start-learning .start-learn-slogan .slogan-down {
     font-size: 23px;
   }
   .start-learning .start-learn-slogan .btn-start-learning a {
@@ -875,14 +834,14 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   }
 
   .statistic-slogan {
-    font-size: 35px !important;
+    font-size: 30px !important;
   }
 
   .statistic .menu-content {
-    font-size: 35px !important;
+    font-size: 25px !important;
   }
   .statistic .number {
-    font-size: 35px !important;
+    font-size: 25px !important;
   }
 
   .footer-text {
@@ -897,20 +856,12 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   }
 
   .footer-image {
-    margin-top: -120px;
+    margin-top: -80px;
     margin-left: -20px;
   }
   .footer-image img {
     width: 30px;
     height: 30px;
-  }
-
-  .card-body .card-title {
-    font-size: 20px !important;
-  }
-
-  .menu-footer .left {
-    margin-left: -70px;
   }
 }
 

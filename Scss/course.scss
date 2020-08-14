@@ -6,7 +6,7 @@
 .backend-course {
   .card {
     height: 470px;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 15px 15px;
     margin-left: 3%;
 
     .image {
@@ -99,8 +99,7 @@
 }
 
 .other-course {
-  margin: 70px 0 15px 30%;
-  
+  margin: 70px 0 15px 32%;
   letter-spacing: -0.02em;
   color: $text_color;
   -webkit-text-stroke: 0.5px $text_color;
@@ -124,7 +123,7 @@
   p {
     text-decoration: none;
     color: $bg_color;
-    font: normal bold 45px 'UTM BryantLG_B';
+    font: normal bold 50px 'UTM BryantLG_B';
     letter-spacing: -0.02em;
     -webkit-text-stroke: 0.5px $bg_color;
   }

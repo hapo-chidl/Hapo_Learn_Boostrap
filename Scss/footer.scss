@@ -1,3 +1,4 @@
+@import 'variable+mixin.scss';
 .hapolearn-footer {
   background-color: $text_card_color;
 }
@@ -20,11 +21,15 @@
   .menu-content {
     ul {
       list-style: none;
-      a {
+     li a {
         font: bold 20px 'UTM BryantLG';
         color: $color;
         text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
       }
+     
     }
   }
 }
@@ -34,14 +39,11 @@
 }
 
 .footer-end {
-  height: 38px;
-  position: absolute;
   background-color: #454545;
-  p {
-    text-align: center;
-    font: 16px/18px 'UTM BryantLG';
+  
+    font: 16px 'UTM BryantLG';
     color: $color;
-  }
+  
 }
 
 .hapolearn-messenger {
@@ -58,13 +60,13 @@
         height: 35px;
       }
       p {
-        margin-top: 5px;
-        padding: 10px;
         background-color: #F1F0F0;
         border-radius: 15px;
         color: #505353;
         -webkit-text-stroke: 0.3px;
-        font: 12px/17px 'Open Sans';
+        font: 13px/17px 'Open_sans';
+        height: 55px;
+        width: 265px;
       }
       i {
         color: #C4C4C4;
@@ -76,12 +78,11 @@
     .hapolearn-messenger-chatbox-login {
       p {
         color: #B3B3B3;
-        text-align: center;
-        font: 12px/16px 'Open Sans';
+        font: 13px/16px 'Open_sans';
       }
     }
     .hapolearn-messenger-chatbox-name {
-      font: 12px/16px 'Open Sans';
+      font: 13px/16px 'Open_sans';
       color: #7F7F7F;
     }
   }
@@ -97,7 +98,12 @@
 .hapolearn-messenger-btnlogin {
   background: #3184F7;
   border: 2px solid red;
-  border-radius: 20px;
-  font: 12px/16px 'Open Sans';
+  border-radius: 20px !important;
+  font: 13px/16px 'Open_sans';
   color: $color;
+}
+
+.hapolearn-messenger-chatbox-text p {
+  padding-top: 7px;
+  
 }

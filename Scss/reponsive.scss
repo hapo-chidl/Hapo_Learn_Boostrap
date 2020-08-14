@@ -32,6 +32,7 @@
       a {
         font-size: 16px;
         margin-top: -5px;
+        margin-left: 55px;
         @include button ($bg_color, 37.14px, 200px, 35px);
       }
     }
@@ -55,7 +56,7 @@
 
   .card-body {
     .card-title {
-      font-size: 17.5px;
+      font-size: 18px;
       margin-top: -15px;
     }
 
@@ -86,8 +87,8 @@
   }
 
   .all-of-course {
-    a {
-      font-size: 28px;
+    p {
+      font-size: 28px !important;
     }
   }
 
@@ -101,7 +102,7 @@
 
       ul li {
         font-size: 16px;
-        list-style-image: url("../image/li-reponsive.png");
+       
       }
     }
   }
@@ -138,23 +139,27 @@
   }
 
   .statistic-slogan {
-    font-size: 35px !important;
+    font-size: 45px !important;
   }
 
   .statistic {
     .menu-content {
-      font-size: 30px !important;
+      font-size: 35px !important;
     }
 
     .number {
-      font-size: 30px !important;
+      font-size: 35px !important;
     }
   }
   
-  .footer-text span {
+  .footer-text
+  {
+    margin-top: -70px;
+     span {
     font-size: 14px !important;
    
   }
+}
 
   .menu-footer {
 
@@ -202,7 +207,7 @@
   height: 200px;
     .content {
 
-      padding: 230px 0 0 12%;
+      padding: 230px 0 0 8%;
       margin-left: 0;
 
       p {
@@ -263,8 +268,8 @@
     @include sizeImage (243px, 49px)
   }
 
-  .all-of-course a {
-    font-size: 24px;
+  .all-of-course p {
+    font-size: 24px !important;
 
     img {
       @include sizeImage(33px, 18px);
@@ -351,16 +356,16 @@
 }
 
   .statistic-slogan {
-    font-size: 30px !important;
+    font-size: 35px !important;
   }
 
   .statistic {
     .menu-content {
-      font-size: 25px !important;
+      font-size: 35px !important;
     }
 
     .number {
-      font-size: 25px !important;
+      font-size: 35px !important;
     }
   }
 
@@ -375,11 +380,21 @@
   }
 
   .footer-image {
-    margin-top: -80px;
+    margin-top: -120px;
     margin-left: -20px;
     img {
       @include sizeImage(30px, 30px);
     }
+  }
+
+  .card-body {
+    .card-title {
+      font-size: 20px !important;
+    }
+  }
+
+  .menu-footer .left {
+    margin-left: -70px;
   }
 }
 
