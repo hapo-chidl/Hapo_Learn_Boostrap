@@ -13,10 +13,10 @@
     }
   }
 
-  .header-banner {
+  .header-content {
     height: 350px;
 
-    .header-content {
+    .content {
       padding: 70px 0 0 0;
       margin-left: -40px;
 
@@ -167,26 +167,38 @@
   .img-header {
     img {
       margin-left: 65%;
-      @include sizeImage(150px, 26.75px);
+      @include sizeImage(170px, 35px);
     }
   }
 
   .menu-header {
-    margin-left: 32%;
 
-    a {
+    .nav-link {
       font: normal bold 16px/22px 'Open-sans' !important;
+      text-align: center;
+
       &:hover {
-        color: $bg_color !important;
+       
+          color: #B2D235 !important;
+          text-decoration: none;
+          background-color: $color !important;
+         // padding: 10px 12px !important;
+          box-shadow: none;
+          border-radius: 17px;
+          transition: 0s;
+         
+          }
       }
     }
-  }
 
   .header-banner {
-    height: 200px;
+    height: 510px;
+    background :linear-gradient(180deg, #FFFBFB 87.5%, #E7E9EE 100%);
+.header-content {
+  height: 200px;
+    .content {
 
-    .header-content {
-      padding: 200px 0 0 12%;
+      padding: 230px 0 0 12%;
       margin-left: 0;
 
       p {
@@ -211,9 +223,11 @@
       }
     }
   }
+}
 
   .header-footer {
     height: 310px;
+    background :linear-gradient(180deg, #FFFBFB 87.5%, #E7E9EE 100%) !important;
   }
 
   .card {
