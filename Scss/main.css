@@ -520,9 +520,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   border-radius: 15px;
   color: #505353;
   -webkit-text-stroke: 0.3px;
-  font: 12px/17px "Open_sans";
-  height: 55px;
-  width: 265px;
+  font: 12px/15px "Open_sans";
 }
 .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text i {
   color: #C4C4C4;
