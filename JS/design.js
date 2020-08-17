@@ -6,6 +6,20 @@ $("#close-btn").click(function() {
     $("#chat").hide();
   });
 
+  function messButton() {
+    var messbtns = document.getElementById("box-chat");
+    if (messbtns.style.display == "block") {
+      messbtns.style.display = "none";
+    } else {
+      messbtns.style.display = "block";
+    }
+  }
+  
+  function closeButton() {
+    var closebtns = document.getElementById("box-chat");
+    closebtns.style.display = "none";
+  }
+  
 
 $(document).ready(function(){
   $('#header-button').click(function() {

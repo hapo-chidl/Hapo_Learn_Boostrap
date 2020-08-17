@@ -46,64 +46,129 @@
   
 }
 
-.hapolearn-messenger {
+.message {
+  width: 360px;
+  height: auto;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
-  .hapolearn-messenger-chatbox {
-    background-color: $color;
-    border-radius: 23px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-    display: none;
-    .hapolearn-messenger-chatbox-text {
-      img {
-        height: 35px;
-      }
-      p {
-        background-color: #F1F0F0;
-        border-radius: 15px;
-        color: #505353;
-        -webkit-text-stroke: 0.3px;
-        font: 12px/15px 'Open_sans';
-       // height: 55px;
-        //width: 265px;
-      }
-      i {
-        color: #C4C4C4;
-        font-size: 24px;
-        cursor: pointer;
-        margin-top: -10px;
-      }
-    }
-    .hapolearn-messenger-chatbox-login {
-      p {
-        color: #B3B3B3;
-        font: 12px/16px 'Open_sans';
-      }
-    }
-    .hapolearn-messenger-chatbox-name {
-      font: 12px/16px 'Open_sans';
-      color: #7F7F7F;
-    }
-  }
-  .hapolearn-messenger-icon {
-    cursor: pointer;
-    z-index: 2;
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
+  margin: 0 20px 150px 0;
+  bottom: 0;
+  right: 0;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
 }
 
-.hapolearn-messenger-btnlogin {
+.message-button img{
+  position: fixed;
+  margin-bottom: 200px;
+  margin-top: 1%;
+  margin-left: 14%;
+  cursor: pointer;
+}
+
+.message-box .message-button-out {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.message-button-out button {
+  font-weight: bold;
+}
+
+.message-box .message-button-out p {
+  font: normal 400 14px/16px 'Open-sans';
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #7F7F7F;
+  padding: 0 70px 0 60px;
+}
+
+.message-button-out img {
+  border-radius: 25px;
+  background: #C4C4C4;
+  width: 24px;
+  height: 24px;
+  font-weight: bold;
+  margin-left: 120px;
+  margin-top: 7px;
+}
+
+.message .message-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.message-content {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 13px;
+}
+
+.message-content img {
+  height: 44px;
+  width: 40px;
+  padding: 18px 3% 0 0;
+}
+
+.message-content .message-content-slogan {
+  background: #F1F0F0;
+  border-radius: 15px;
+  height: 50px;
+  width: 275px;
+  align-items: center;
+}
+
+.message-content .message-content-slogan p {
+  font: normal normal 14px/17px 'Open_sans';
+  letter-spacing: -0.02em;
+  color: #505353;
+  padding-left: 4%;
+}
+
+#box-chat .message-login {
+  margin-top: 15px;
+  width: 265px;
+  height: 37px;
   background: #3184F7;
-  border: 2px solid red;
-  border-radius: 15px !important;
-  font: 12px/16px 'Open_sans';
-  color: $color;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 56px;
 }
 
-.hapolearn-messenger-chatbox-text p {
-  padding-top: 7px;
-  
+.message-login img {
+  height: 20px;
+  width: 25px;
+  padding-left: 7px;
 }
+
+.message {
+.message-login a {
+  font: normal 300 14px/16px 'Open_sans';
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-left: 10px;  
+}
+}
+
+.message-footer p {
+  font: normal 14px/16px 'Open-sans';
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #B3B3B3;
+}
+
+.message-button :hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.5s;
+}
+
+

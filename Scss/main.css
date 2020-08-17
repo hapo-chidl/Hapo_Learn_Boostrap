@@ -49,7 +49,7 @@ body {
 
 .menu-header .nav-link {
   text-decoration: none;
-  font: normal bold 15px/19px "Open-sans";
+  font: bold 15px/19px "Open_sans";
   text-transform: uppercase;
   color: #505353 !important;
   padding: 7px 15px 8px 20px;
@@ -144,7 +144,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
 }
 
 .backend-course .card, .frontend-course .card {
-  height: 470px;
+  height: 435px;
   border-radius: 15px 15px 15px 15px;
   margin-left: 3%;
 }
@@ -159,7 +159,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   margin-top: -150px;
 }
 .frontend-course .card {
-  height: 395px;
+  height: 385px;
 }
 .frontend-course .card .image {
   height: 194px;
@@ -170,10 +170,9 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   color: #B2D235;
   text-align: center;
   -webkit-text-stroke: 0.3px #B2D235;
-  /* identical to box height */
 }
 .card-body .card-text {
-  font: normal normal 14px "UTM BryantLG";
+  font: normal 14px "UTM BryantLG";
   text-align: center;
   letter-spacing: -0.05em;
   color: #505353;
@@ -186,15 +185,15 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   text-decoration: none;
   -webkit-text-stroke: 0.5px white;
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 9px 37px 11px 36px;
   background-color: #B2D235;
   height: 42px;
   width: 200px;
   border-radius: 35px;
+  margin-left: 65px;
 }
 .card-body:hover {
-  opacity: 0.7;
-  transition: 0.4s;
+  color: red !important;
+  text-decoration: none;
 }
 
 .html-course {
@@ -501,59 +500,127 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   color: white;
 }
 
-.hapolearn-messenger {
+.message {
+  width: 360px;
+  height: auto;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
-}
-.hapolearn-messenger .hapolearn-messenger-chatbox {
-  background-color: white;
+  margin: 0 20px 150px 0;
+  bottom: 0;
+  right: 0;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
   border-radius: 23px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+}
+
+.message-button img {
+  position: fixed;
+  margin-bottom: 200px;
+  margin-top: 1%;
+  margin-left: 14%;
+  cursor: pointer;
+}
+
+.message-box .message-button-out {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.message-button-out button {
+  font-weight: bold;
+}
+
+.message-box .message-button-out p, .message-box .message-button-out .header-content .content .slogan-up, .header-content .content .message-box .message-button-out .slogan-up, .message-box .message-button-out .header-content .slogan-down, .header-content .message-box .message-button-out .slogan-down {
+  font: normal 400 14px/16px "Open-sans";
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #7F7F7F;
+  padding: 0 70px 0 60px;
+}
+
+.message-button-out img {
+  border-radius: 25px;
+  background: #C4C4C4;
+  width: 24px;
+  height: 24px;
+  font-weight: bold;
+  margin-left: 120px;
+  margin-top: 7px;
+}
+
+.message .message-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   display: none;
 }
-.hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text img {
-  height: 35px;
+
+.message-content {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 13px;
 }
-.hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text p, .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text .header-content .content .slogan-up, .header-content .content .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text .slogan-up, .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text .header-content .slogan-down, .header-content .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text .slogan-down {
-  background-color: #F1F0F0;
+
+.message-content img {
+  height: 44px;
+  width: 40px;
+  padding: 18px 3% 0 0;
+}
+
+.message-content .message-content-slogan {
+  background: #F1F0F0;
   border-radius: 15px;
+  height: 50px;
+  width: 275px;
+  align-items: center;
+}
+
+.message-content .message-content-slogan p, .message-content .message-content-slogan .header-content .content .slogan-up, .header-content .content .message-content .message-content-slogan .slogan-up, .message-content .message-content-slogan .header-content .slogan-down, .header-content .message-content .message-content-slogan .slogan-down {
+  font: normal normal 14px/17px "Open_sans";
+  letter-spacing: -0.02em;
   color: #505353;
-  -webkit-text-stroke: 0.3px;
-  font: 12px/15px "Open_sans";
-}
-.hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-text i {
-  color: #C4C4C4;
-  font-size: 24px;
-  cursor: pointer;
-  margin-top: -10px;
-}
-.hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login p, .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login .header-content .content .slogan-up, .header-content .content .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login .slogan-up, .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login .header-content .slogan-down, .header-content .hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-login .slogan-down {
-  color: #B3B3B3;
-  font: 12px/16px "Open_sans";
-}
-.hapolearn-messenger .hapolearn-messenger-chatbox .hapolearn-messenger-chatbox-name {
-  font: 12px/16px "Open_sans";
-  color: #7F7F7F;
-}
-.hapolearn-messenger .hapolearn-messenger-icon {
-  cursor: pointer;
-  z-index: 2;
-}
-.hapolearn-messenger .hapolearn-messenger-icon:hover {
-  transform: scale(1.1);
+  padding-left: 4%;
 }
 
-.hapolearn-messenger-btnlogin {
+#box-chat .message-login {
+  margin-top: 15px;
+  width: 265px;
+  height: 37px;
   background: #3184F7;
-  border: 2px solid red;
-  border-radius: 15px !important;
-  font: 12px/16px "Open_sans";
-  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 56px;
 }
 
-.hapolearn-messenger-chatbox-text p, .hapolearn-messenger-chatbox-text .header-content .content .slogan-up, .header-content .content .hapolearn-messenger-chatbox-text .slogan-up, .hapolearn-messenger-chatbox-text .header-content .slogan-down, .header-content .hapolearn-messenger-chatbox-text .slogan-down {
-  padding-top: 7px;
+.message-login img {
+  height: 20px;
+  width: 25px;
+  padding-left: 7px;
+}
+
+.message .message-login a {
+  font: normal 300 14px/16px "Open_sans";
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.message-footer p, .message-footer .header-content .content .slogan-up, .header-content .content .message-footer .slogan-up, .message-footer .header-content .slogan-down, .header-content .message-footer .slogan-down {
+  font: normal 14px/16px "Open-sans";
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #B3B3B3;
+}
+
+.message-button :hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.5s;
 }
 
 @font-face {
@@ -619,10 +686,14 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   }
 
   .card {
-    height: 320px !important;
+    height: 300px !important;
   }
   .card .image {
     height: 131.25px !important;
+  }
+
+  .frontend-course .card {
+    height: 270px;
   }
 
   .card-body .card-title {
@@ -646,6 +717,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
     height: 24.45px;
     width: 116.42px;
     border-radius: 35px;
+    margin-left: 30px;
   }
 
   .other-course {
@@ -657,6 +729,9 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
     font-size: 35px;
   }
 
+  .all-of-course {
+    margin-top: 60px;
+  }
   .all-of-course p, .all-of-course .header-content .content .slogan-up, .header-content .content .all-of-course .slogan-up, .all-of-course .header-content .slogan-down, .header-content .all-of-course .slogan-down {
     font-size: 28px !important;
   }
@@ -666,7 +741,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
   }
 
   .why-hapo-content {
-    margin-top: 0;
+    margin-top: -70px;
   }
   .why-hapo-content .menu {
     margin-left: 0;
@@ -716,6 +791,20 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
 
   .menu-footer .menu-content a {
     font-size: 16px !important;
+  }
+
+  .message-button img {
+    margin-left: 30%;
+  }
+
+  .footer-text img {
+    width: 170px;
+    height: 36px;
+  }
+
+  .footer-image img {
+    width: 40px;
+    height: 40px;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -781,7 +870,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
 
   .card {
     width: 280px;
-    height: 360px !important;
+    height: 320px !important;
     margin-bottom: 20px;
     justify-content: center;
   }
@@ -795,7 +884,8 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
 
   .card-body a {
     font-size: 18px;
-    padding: 9px 37px 11px 36px;
+    padding: 6px 30px 7px 30px;
+    margin-left: 17px;
     background-color: #B2D235;
     height: 200px;
     width: 42px;
@@ -809,6 +899,9 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
     height: 49px;
   }
 
+  .all-of-course {
+    margin-top: 50px;
+  }
   .all-of-course p, .all-of-course .header-content .content .slogan-up, .header-content .content .all-of-course .slogan-up, .all-of-course .header-content .slogan-down, .header-content .all-of-course .slogan-down {
     font-size: 24px !important;
   }
@@ -827,6 +920,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
     margin: -80px 0 0 280px;
   }
   .why-hapolearn .why-header-slogan p, .why-hapolearn .why-header-slogan .header-content .content .slogan-up, .header-content .content .why-hapolearn .why-header-slogan .slogan-up, .why-hapolearn .why-header-slogan .header-content .slogan-down, .header-content .why-hapolearn .why-header-slogan .slogan-down {
+    margin-top: -100px;
     font-size: 35px;
   }
 
@@ -887,7 +981,7 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
     margin-top: -50px !important;
   }
   .footer-text img {
-    width: 150px;
+    width: 170px;
     height: 31px;
   }
   .footer-text span {
@@ -907,8 +1001,16 @@ p, .header-content .slogan-down, .header-content .content .slogan-up {
     font-size: 20px !important;
   }
 
-  .menu-footer .left {
-    margin-left: -70px;
+  .message-button img {
+    margin-left: 70%;
+  }
+
+  .why-hapolearn-img img {
+    margin-left: 45px;
+  }
+
+  .left {
+    margin-left: -88px;
   }
 }
 
