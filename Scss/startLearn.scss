@@ -16,4 +16,11 @@
   color: $bg_color;
   text-decoration: none;
   @include button($color, 70px, 377px, 35px);
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.7;
+    transition: 0.4s;
+    color: $bg_color;
+  }
 }
